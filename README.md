@@ -3,7 +3,7 @@ Update version of the Cherry Architecture - Poppy Robot - Mobile App - Control S
 
 Cherry solution is composed of three sub projects:
 <p align="center">
-<img src="https://github.com/jordi33/CherrySolution/blob/master/ReadMePics/archi_cherry.PNG" alt="" width="600" height="500">
+<img src="https://github.com/Cherry-project/CherrySolution/blob/master/ReadMePics/archi_cherry.PNG" alt="" width="600" height="500">
 </p>
 
 
@@ -21,11 +21,11 @@ At first, you need to setup the Google Cloud environment : activate the Speech A
 
 You can now launch the C# project on your IDE (Visual Studio for example). Your need to modify the DfToken and the ApiKeyPath in the Settings.settings file in the CloudService project :
 
-https://github.com/jordi33/CherrySolution/blob/master/CherryControlServer/CloudServices/Properties/Settings.settings
+https://github.com/Cherry-project/CherrySolution/blob/master/CherryControlServer/CloudServices/Properties/Settings.settings
 
 Next, you need to modify the credentials to your MongoDB database. The config is in the Settings.settings file in the Database project :
 
-https://github.com/jordi33/CherrySolution/blob/master/CherryControlServer/Database/Properties/Settings.settings
+https://github.com/Cherry-project/CherrySolution/blob/master/CherryControlServer/Database/Properties/Settings.settings
 
 You can now launch the project, and create and executable file.
 
@@ -45,7 +45,7 @@ __Installation__
 
 After importing the project to an Android IDE (Android Studio for example), you need to modify the ip address of the C# server. It's located in the ServerProps.properties file :
 
-https://github.com/jordi33/CherrySolution/blob/master/MobileApp/app/src/main/assets/ServerProps.properties
+https://github.com/Cherry-project/CherrySolution/blob/master/MobileApp/app/src/main/assets/ServerProps.properties
 
 You can now launch the project, and deploy it to an android device.
 
@@ -57,7 +57,7 @@ __Installation__
 
 Copy the code to the raspberry card. You need to modify the address to the C# server, to access it through websocket. This ip address is located in the conf.py file :
 
-https://github.com/jordi33/CherrySolution/blob/master/CherryAgent/Core/conf.py
+https://github.com/Cherry-project/CherrySolution/blob/master/CherryAgent/Core/conf.py
 
 You can now launch the project through the Start.py file at root :
 
