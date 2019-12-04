@@ -147,6 +147,18 @@ namespace CherryController.Core
                     application.Poppy.PlayMove((string) someCommand.MoveName);
                     Log.Debug($"Playing {someCommand.MoveName}");
                     break;
+                case "ResetPoppy":
+                    try
+                    {
+                        Log.Debug($"reset");
+                        application.Poppy.ResetPoppy();
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warning("No Poppy linked yet");
+                    }
+                    
+                    break;
                 case "PlayChoregraphy":
                     dynamic choregraphy = Database.getChoregraphy((string)someCommand.Name);
                     application.Poppy.PlayChoregraphy(choregraphy);

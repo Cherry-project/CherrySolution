@@ -155,6 +155,11 @@ namespace CherryController.Core
             _sendBack(new RobotCommands.PlayChoregraphyCommand(choregraphy).ToString());
         }
 
+        public void ResetPoppy()
+        {
+            ResetTimer();
+            _sendBack(new RobotCommands.ResetPoppy().ToString());
+        }
         private void ReviveDialog()
         {
             if (this._isApplicationInactive)

@@ -57,6 +57,14 @@ namespace CherryController.Utils
             }
         }
 
+        public class ResetPoppy : Command
+        {
+            public ResetPoppy(string action = "Reset")
+            {
+                Action = action;
+            }
+        }
+
         public class PlayChoregraphyCommand: Command
         {
             public List<string> Movements { get; set; }
